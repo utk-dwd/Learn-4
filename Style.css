@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* topics :
+width-height
+color
+units: px % vw vh em rem (Viewport Width/Height)
+                        (%: Parent tag se value leta hai & vw: screen se value leta hai)
+font-family
+font size
+line-height
+text-align
+padding
+margin 
+border
+display
+position
+background
+flexbox
+pseudo-elements
+pseudo-classes
+diplay-grid
+
+Animation
+Media Queries
+*/
+.main {
+    width: 300px; /* px bht jyada use nhi krna chiye scroll bar aajata hai*/
+    height: 300px;
+    background-color: red;
+    color: white;
+}
