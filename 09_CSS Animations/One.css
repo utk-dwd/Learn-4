@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+
+}
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: lightcoral;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+#box img {
+    width: 20vw;
+    height: 20vw;
+}
+@keyframes move {
+    /* from{
+        left: 0;
+        top: 0;
+    }
+    to{
+        left: 70%;
+        top: 50%;
+        background-color: lightslategray;
+        rotate: 360deg; 
+    }
+     */
+
+    0% {
+        left: 0%;
+        top: 0;
+
+    }
+    50%{
+        left: 80%;
+        top: 0;
+
+    }
+    100% {
+        left: 80%;
+        top: 50%;
+    }
+}
+
+#box1 {
+    margin-top: 20x;
+}
+button{
+    margin: 20px 20px;
+    padding: 10px 25px;
+    /* background-color: black; */
+    border: 4px solid lightgreen;
+    color: grey;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    transition: all linear 0.5s;
+    z-index: +1;
+    overflow: hidden;
+}
+button::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+
+    background-color: lightgreen;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transition: all linear 0.5s;
+    z-index: -1;
+}
+
+button:hover::after {
+    transform: translate(-50%,-50%) scale(3);
+}
+
+button:hover {
+    color: rgb(0, 0, 0);
+}
