@@ -11,10 +11,10 @@ html, body {
 }
 
 #main {
-    height:  100%;
+    height:  100vh;
     width: 100%;
     position: relative;
-    background-image: linear-gradient(#BE5E6D, #D3B9B8);
+    background-image: linear-gradient(#BE5E6D, #d4c1c1);
     padding: 1px;
 }
 
@@ -60,14 +60,26 @@ html, body {
     /* background-color: lightgreen; */
     padding-right: 100px;
     padding-top: 4px;
+    position: relative;
 }
+
+#nav h1::after{
+    content: "©️";
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    top: 5%;
+    right: 50%;
+}
+
 #nav h2:nth-last-child(1) {
     width: 10%;
 }
 
 #center {
     height: 85%;
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
     padding: 4vw;
     position: relative;
 }
@@ -75,11 +87,520 @@ html, body {
 #content {
     height: 100%;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
 }
 #content video {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+#overlay {
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    padding: 2vw;
+    background-color: rgba(0, 0, 0, 0.016);
+    backdrop-filter: blur(1px);
+}
+
+#over1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#over1 h1 {
+    font-family: 'Anton';
+    font-size: 4vw;
+    line-height: 3.9vw;
+    font-weight: 500;
+    color: #fff;
+}
+
+#over1 h2 {
+    font-size: 1vw;
+    padding: 2vw 2.4vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 1.5px solid white;
+    color: white;
+}
+#over2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+}
+
+#over2 h4 {
+    font-size: 1vw;
+    font-weight: 500;
+    color: white;
+}
+
+#over2 img {
+    height: 3vw;
+}
+
+#scroll {
+    height: 40vh;
+    width: 100%;
+    /* background-color: #d4c1c1; */
+    /* padding: 1vw; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+#container {
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll img {
+    /* display: none; */
+    height: 68%;
+    border-radius: 50%;
+    width: 12.5%;
+    object-fit: cover;
+    object-position: top;
+    margin: 2vw;
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8vw;
+    /* background-color: red; */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#alphabet h5 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid black;
+    margin-right: 2vw;
+}
+
+#alphabet h6 {
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    /* letter-spacing: 4px; */
+    padding: 0.3vw 0.5vw;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+#alphabet h6:hover {
+    border: 1px solid black;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+#page21 {
+    height: 100%;
+    width: 50%;
+    background-image: url(https://assets.newme.asia/wp-content/uploads/2024/08/22143746/Denims_slider_Aug-22webp.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#page22 {
+     height: 100%;
+     width: 45%;    
+     
+}
+
+#page22 img {
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#text22 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2vw;
+}
+ #text22 h2 {
+    font-size: 1.6vw;
+    font-weight: 500;
+ }
+
+ #text22 h3 {
+    font-size: 1.2vw;
+    font-weight: 400;
+ }
+
+ #page3 {
+    height: 100%;
+    width: 100%;
+    /* background-color: lightblue; */
+    padding: 2vw;
+ }
+
+ #page31 {
+    width: 100%;
+    /* background-color: lightgray; */
+ }
+ #page31 h1 {
+    font-family: 'Anton';
+    font-size: 2.5vw;
+    letter-spacing: 3px;
+ }
+ #page32 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: lightgoldenrodyellow; */
+    height: 95%;
+    width: 100%;
+ }
+
+ #page321 {
+    height: 100%;
+    width: 40%;
+    /* background-color: lightpink; */
+ }
+
+ #page3211 {
+    height: 80%;
+    width: 100%;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #page3211 img {
+    object-position: center;
+    height: 70%;
+    width: 64%;
+
+ }
+
+ #page3212 {
+    height: 20%;
+    width: 100%;
+    /* background-color: lightgray; */
+ }
+
+ #page3212 h5 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-top: 2px solid black;
+    padding: 2vw;
+    padding-right: 2.5vw;
+    padding-left: 4vw;
+ }
+
+ #page322 {
+    height: 100%;
+    width: 60%;
+    /* background-color: lightsalmon; */
+ }
+
+ #page322 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+ }
+
+ #page4 {
+    height: 100%;
+    width: 100%;
+    /* background-color: lightgoldenrodyellow; */
+    padding: 3vw;
+ }
+
+ #page4 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* object-position: bottom; */
+ }
+
+ #page5 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+ }
+
+#page5>h1 {
+    text-align: center;
+    font-family: 'Anton';
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 600;
+    letter-spacing: 3px;  
+    margin-bottom: 5vh;
+}
+
+.elem {
+    height: 16vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+}
+
+.elem img {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    border-radius: 50%;
+    left: 12%;
+    opacity: 0;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease 1s;
+}
+
+.elem:hover img {
+    opacity: 1;
+    left: 24%;
+}
+
+.elem h4 {
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6%;
+}
+
+.elem .elem-part2 {
+    width: 40%;
+    font-weight: 400;  
+}
+
+.elem .elem-part2 h1 {
+    font-weight: 400;  
+}
+
+.elem .elem-part2 h5 {
+    font-size: 0.9vw;
+    font-weight: 550;  
+}
+.elem:nth-last-child(1) {
+    border-bottom: 2px solid black;
+}
+
+#page6 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+#page61 {
+    height: 100%;
+    width: 50%;
+    background-image: url(https://assets.newme.asia/wp-content/uploads/2024/08/14161708/Old-money-revised.webp);
+    background-size: cover;
+    background-position: top;
+}
+
+#page62 {
+     height: 100%;
+     width: 45%;        
+}
+
+#page62 h1 {
+    font-size: 2.2vw;
+    font-family: 'Anton';
+    letter-spacing: 2px;
+    text-decoration: line-through;
+}
+
+#page62 img {
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#text62 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2vw;
+}
+ #text62 h2 {
+    font-size: 1.6vw;
+    font-weight: 500;
+ }
+
+ #text62 h3 {
+    font-size: 1.2vw;
+    font-weight: 400;
+ }
+
+#marque {
+    width: 100%;
+    padding: 0.8.vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#marque h1 {
+    display: inline-block;
+    font-size: 2.8vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 0.8px;
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+ 
+#footer {
+    height: 40%;
+    width: 100%;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: lightgoldenrodyellow; */
+
+}
+#leftfooter {
+    height: 100%;
+    width: 40%;
+    /* background-color: lightgray; */
+    border-right: 2px solid black;
+}
+#leftfooter1 img {
+        width: 90px;
+        height: 72px;
+        /* background-color: red; */      
+}
+
+#leftfooter1 {
+    height: 60%;
+    width: 100%;
+    padding: 3vw;
+    position: relative;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    /* background-color: lightgreen; */
+}
+#leftfooter1 h2 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    
+}
+
+#leftfooter2{
+    height: 40%;
+    width: 100%;
+    padding: 2vw;
+}
+#leftfooter2 h2 {
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+#leftfooter2 h3 {
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+
+
+#middlefooter {
+    width:20%;
+    height: 100%;
+    border-right: 2px solid black;
+}
+
+#middlefooter h2 {
+    padding: 3vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+#middlefooter h3 {
+    padding: 0 3vw;
+    padding-top: 5vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#middlefooter h4 {
+    padding: 0 3vw;
+    font-size: 0.7vw;
+    font-weight: 500;
+}
+
+#rightfooter {
+    height: 100%;
+    width: 40%;
+    /* background-color: lightcoral; */
+}
+
+#rightfooter img {
+    height: 100%;
+    width: 80%;
+    padding-left: 5vw;
 }
