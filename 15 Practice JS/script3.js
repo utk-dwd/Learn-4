@@ -37,6 +37,6 @@ add.addEventListener("click",function(){
     }
 })
 
-removeEventListener.addEventListener("click", function(){
+remove.addEventListener("click", function(){
     ul.removeChild(li)
 })
