@@ -20,7 +20,7 @@ function Card({width, start, para, hover="false"}) {
             {   
                 start === true && (
                     <>
-                        <h1 cla ssName="text-8xl flex font-bold tracking-wider leading-none mb-5">START CASINO <MdCasino/></h1>
+                        <h1 className="text-8xl flex font-bold tracking-wider leading-none mb-5">START CASINO <MdCasino/></h1>
                         <button className="rounded-full py-2 px-3 border-[1px] border-zinc-50 flex items-center gap-2 font-thin"> Let's GO <FaFireAlt/> </button>
                     </>
                 )
