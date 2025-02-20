@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import Product from './Product';
 import { motion } from 'framer-motion';
+import doge5 from '/src/assets/doge5.mp4';
+import shiba1 from '/src/assets/Shiba1.mp4';
+import pengu1 from '/src/assets/pengu1.mp4';
+import brett1 from '/src/assets/brett1.mp4';
+import pepe2 from '/src/assets/pepe2.mp4';
+
 
 function Products() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -47,7 +53,7 @@ function Products() {
             transition={{ease: [0.76, 0, 0.24, 1], duration: 0.5}}
             className='w-full h-full rounded-2xl'>
               <video
-                src="src/assets/doge5.mp4"
+                src={doge5}
                 loop
                 autoPlay
                 muted
@@ -63,7 +69,7 @@ function Products() {
             transition={{ease: [0.76, 0, 0.24, 1], duration: 0.5}}
             className='w-full h-full bg-sky-300'>
               <video
-                src="src/assets/Shiba1.mp4"
+                src= {shiba1}
                 loop
                 autoPlay
                 muted
@@ -79,7 +85,7 @@ function Products() {
             transition={{ease: [0.76, 0, 0.24, 1], duration: 0.5}}
             className='w-full h-full bg-sky-500'>
               <video
-                src="src/assets/pengu1.mp4"
+                src= {pengu1}
                 loop
                 autoPlay
                 muted
@@ -95,7 +101,7 @@ function Products() {
             transition={{ease: [0.76, 0, 0.24, 1], duration: 0.5}}
             className='w-full h-full bg-sky-700'>
               <video
-                src="src/assets/brett1.mp4"
+                src= {brett1}
                 loop
                 autoPlay
                 muted
@@ -111,7 +117,7 @@ function Products() {
             transition={{ease: [0.76, 0, 0.24, 1], duration: 0.5}}
             className='w-full h-full bg-sky-900'>
               <video
-                src="src/assets/pepe2.mp4"
+                src= {pepe2}
                 loop
                 autoPlay
                 muted
