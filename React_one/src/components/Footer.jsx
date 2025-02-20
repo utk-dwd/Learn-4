@@ -21,7 +21,7 @@ function Footer() {
                 </div>
                 <div className='basis-1/2 flex flex-col items-center'>
                     <p className='text-right'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, cupiditate.</p>
-                    <img src='src/assets/Side.png' className='mt-5'></img>
+                    <img src='https://i.postimg.cc/h46jLW5d/Side.png' className='mt-5'></img>
                 </div>
             </div>
         </div>
